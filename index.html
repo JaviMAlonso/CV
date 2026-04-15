@@ -1,30 +1,56 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-    <title>CV</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi CV</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <img src="img/wip.png" alt="">
-    <script src="javascript/script.js"></script>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+  <header>
+    <div class="img"><img
+        src="https://avatars.githubusercontent.com/u/117452551?s=400&u=95c972fb351c3410f54a0ce91c0f929db86ee15b&v=4"
+        alt="Imagen de perfil predefinida"></div>
+    <h1 id="nombre"></h1>
+    <h2 id="titulo"></h2>
+    <p id="correo"></p>
+    <p id="telefono"></p>
+  </header>
+
+  <nav>
+    <button onclick="mostrarSeccion('skills')">Habilidades</button>
+    <button onclick="mostrarSeccion('experiencia')">Experiencia</button>
+    <button onclick="mostrarSeccion('educacion')">Educación</button>
+    <button onclick="mostrarSeccion('contacto')">Contacto</button>
+    <button onclick="mostrarSeccion('idiomas')">Idiomas</button>
+
+  </nav>
+
+  <div class="container">
+    <section id="skills" class="active">
+      <div class="skills" id="skills"></div>
+    </section>
+    <section id="experiencia"></section>
+    <section id="educacion"></section>
+    <section id="contacto"></section>
+    <section id="idiomas" onclick="animarIdiomas()"></section>
+  </div>
+  <footer>
+    <p>© 2026 Tu Nombre</p>
+    <div class="redes">
+      <a
+        href="https://www.linkedin.com/in/javier-mart%C3%ADn-alonso-b24122368?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a>
+      <a href="https://github.com/JaviMAlonso">GitHub</a>
+      <a href="mailto:javimalonso9@gmail.com">Email</a>
+    </div>
+    <button id="boton" class="theme-btn" onclick="toggleTheme()">🌙 Cambiar tema</button>
+  </footer>
+  <script src="js/script.js">
+  </script>
+
 </body>
 
 </html>
